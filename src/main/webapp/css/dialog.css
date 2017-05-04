@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* 提示 */
+.mask{position:fixed; width:100%; height:100%; background:rgba(0,0,0,.5); overflow: hidden; z-index:99; top:0; left:0; display:none;}
+.dialog{position:fixed; z-index:100; width:85%; text-align:center;  background:rgba(255,255,255,.96); border-radius:5px; box-shadow:0px 5px 30px 0px rgba(0,0,0,.1);}
+.dialog_hd{padding:1.2em 0 1em;}
+.dialog_title{font-size:17px; font-weight:500;}
+.dialog_bd{padding:0 20px 20px 20px; font-size:15px; color:#999; line-height:20px;}
+.dialog_ft{position:relative; line-height:42px; display:-webkit-box; display:-webkit-flex; display:flex;}
+.dialog_ft a{display:block; text-align:center; -webkit-box-flex:1; -webkit-flex:1; text-decoration:none;}
+.dialog_ft:after,.dialog_confirm .dialog_ft a:after{content:""; position:absolute; left:0;  top:0; -webkit-transform-origin:0 0; transform-origin:0 0; }
+.dialog_ft:after{width:100%; height:1px; border-top:1px solid #D5D5D6; transform:scaleY(.5); -webkit-transform:scaleY(.5);}
+.dialog_confirm .dialog_ft a:after{width:1px; height:100%; border-left:1px solid #D5D5D6;  transform:scaleX(.5);}
+.dialog_confirm .dialog_ft a:first-child:after{border-left:none;}
+.dialog_confirm .dialog_hd{padding:1em 20px 1em 20px; text-align:left;}
+.dialog_confirm .dialog_bd{text-align:left;}
+.dialog_confirm .dialog_ft a{position:relative;}
+.dialog label{height:50px; padding:0 12px; font-size:16px; position:relative; color:#333;}
+.dialog .cells_label .hdname{padding-right:0;}
